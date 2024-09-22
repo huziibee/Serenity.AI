@@ -74,7 +74,7 @@ const SignUp = () => {
             style={{ marginTop: 24 }}
           />
           {/* <OAuth /> */}
-          <Link href="/(root)/(tabs)/home" style={{ fontSize: 18, textAlign: 'center', color: '#666', marginTop: 40 }}>
+          <Link href="/sign-in" style={{ fontSize: 18, textAlign: 'center', color: '#666', marginTop: 40 }}>
             Already have an account?{' '}
             <Text style={{ color: '#007AFF' }}>Log In</Text>
           </Link>

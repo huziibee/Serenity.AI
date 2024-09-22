@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Image, ScrollView, Text, View, StyleSheet, SafeAreaView } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 import CustomButton from "@/components/CustomButton";
 import InputField from "@/components/InputField";
@@ -14,6 +14,9 @@ const SignIn = () => {
 
   const handleSignIn = () => {
     console.log('Sign in pressed with:', form);
+    // redirect to home screen
+    router.push("/(root)/(tabs)/home")
+
   };
 
   return (
