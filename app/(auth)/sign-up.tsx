@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Image, ScrollView, Text, View } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, Redirect } from 'expo-router';
 import Modal from 'react-native-modal';
 
 import CustomButton from "@/components/CustomButton";
@@ -74,7 +74,7 @@ const SignUp = () => {
             style={{ marginTop: 24 }}
           />
           {/* <OAuth /> */}
-          <Link href="/sign-in" style={{ fontSize: 18, textAlign: 'center', color: '#666', marginTop: 40 }}>
+          <Link href="/(root)/(tabs)/home" style={{ fontSize: 18, textAlign: 'center', color: '#666', marginTop: 40 }}>
             Already have an account?{' '}
             <Text style={{ color: '#007AFF' }}>Log In</Text>
           </Link>
@@ -98,6 +98,7 @@ const SignUp = () => {
               title="Browse Home"
               onPress={() => {
                 setShowSuccessModal(false);
+                <Redirect href="/(root)/(tabs)/home" />
                 // Navigate to home screen
               }}
               style={{ marginTop: 20 }}
