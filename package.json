@@ -5,6 +5,7 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
+    "deploy": "git add . && git commit -m \"new commit\" && git push -u origin main",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
