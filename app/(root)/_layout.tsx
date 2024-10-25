@@ -54,6 +54,4 @@ const Layout = () => {
   );
 };
 
-console.log("hi");
-
 export default Layout;
